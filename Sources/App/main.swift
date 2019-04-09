@@ -60,7 +60,7 @@ do {
     grid.visibilities.right = [2, 2, 1, 3, 4, 2]
     grid.visibilities.bottom = [3, 2, 1, 4, 4, 2]
     grid.markSolved(x: 0, y: 0, height: 4)
-    grid.markSolved(x: 4, y: 0, height: 6)
+    grid.markSolved(x: 4, y: 0, height: 1)
     
     let solver = Solver(grid: grid)
     solver.interactive = interactive
