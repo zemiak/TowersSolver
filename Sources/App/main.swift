@@ -63,7 +63,7 @@ do {
     grid.markSolved(x: 4, y: 0, height: 1)
     */
 
-    // 5
+    /* // 5
     grid.visibilities.top = [3, 2, 2, 1, 3, 4]
     grid.visibilities.left = [3, 2, 1, 2, 3, 2]
     grid.visibilities.right = [3, 3, 3, 2, 2, 1]
@@ -74,6 +74,16 @@ do {
     grid.markSolved(x: 2, y: 3, height: 6)
     grid.markSolved(x: 2, y: 4, height: 5)
     grid.markSolved(x: 5, y: 4, height: 3)
+    */
+
+    // 6
+    grid.visibilities.top = [1, 2, 2, 2, 3, 3]
+    grid.visibilities.left = [1, 2, 3, 3, 2, 3]
+    grid.visibilities.right = [4, 3, 2, 2, 1, 3]
+    grid.visibilities.bottom = [3, 5, 1, 2, 3, 2]
+    grid.markSolved(x: 2, y: 1, height: 3)
+    grid.markSolved(x: 2, y: 2, height: 4)
+    grid.markSolved(x: 3, y: 2, height: 6)
     
     let solver = Solver(grid: grid)
     solver.interactive = interactive
